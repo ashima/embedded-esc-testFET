@@ -1,0 +1,533 @@
+Archive member included because of file (symbol)
+
+/opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_exit.o)
+                              /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o (exit)
+/opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+                              esc_test.o (__do_copy_data)
+/opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_clear_bss.o)
+                              esc_test.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+read_len            0x2               embedded-atmel-twi/TWISlaveMem14.o
+twiStore            0x2               embedded-atmel-twi/TWISlaveMem14.o
+write_len           0x2               embedded-atmel-twi/TWISlaveMem14.o
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+ .bss           0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+ .text          0x0000000000000000        0x0 embedded-atmel-twi/TWISlaveMem14.o
+ .data          0x0000000000000000        0x0 embedded-atmel-twi/TWISlaveMem14.o
+ .bss           0x0000000000000000        0x0 embedded-atmel-twi/TWISlaveMem14.o
+ .text          0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_exit.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_exit.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_exit.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_exit.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_exit.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_exit.o)
+ .text          0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_clear_bss.o)
+ .data          0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_clear_bss.o)
+ .text.libgcc.mul
+                0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_clear_bss.o)
+ .text.libgcc.div
+                0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_clear_bss.o)
+ .text.libgcc.prologue
+                0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_clear_bss.o)
+ .text.libgcc.builtins
+                0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_clear_bss.o)
+ .text.libgcc.fmul
+                0x0000000000000000        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_clear_bss.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000002000 xr
+data             0x0000000000800060 0x000000000000ffa0 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+LOAD /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/libm.a
+LOAD esc_test.o
+LOAD embedded-atmel-twi/TWISlaveMem14.o
+LOAD /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a
+LOAD /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/libc.a
+LOAD /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x0000000000000000      0x686
+ *(.vectors)
+ .vectors       0x0000000000000000       0x26 /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+                0x0000000000000000                __vectors
+                0x0000000000000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ .progmem.gcc_sw_table.__vector_17
+                0x0000000000000026       0x32 embedded-atmel-twi/TWISlaveMem14.o
+ *(.progmem*)
+ .progmem.data.mm
+                0x0000000000000058        0x4 embedded-atmel-twi/TWISlaveMem14.o
+                0x0000000000000058                mm
+                0x000000000000005c                . = ALIGN (0x2)
+                0x000000000000005c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000000000005c        0x0 linker stubs
+ *(.trampolines*)
+                0x000000000000005c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000000000005c                __ctors_start = .
+ *(.ctors)
+                0x000000000000005c                __ctors_end = .
+                0x000000000000005c                __dtors_start = .
+ *(.dtors)
+                0x000000000000005c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000000000005c        0x0 /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+                0x000000000000005c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000000000005c        0xc /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+ *(.init2)
+ *(.init3)
+ .init3         0x0000000000000068       0x14 esc_test.o
+                0x0000000000000068                _Z10get_mcucsrv
+ *(.init3)
+ *(.init4)
+ .init4         0x000000000000007c       0x16 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+                0x000000000000007c                __do_copy_data
+ .init4         0x0000000000000092       0x10 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_clear_bss.o)
+                0x0000000000000092                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000000000000a2        0x4 /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+ *(.init9)
+ *(.text)
+ .text          0x00000000000000a6        0x2 /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+                0x00000000000000a6                __vector_18
+                0x00000000000000a6                __vector_12
+                0x00000000000000a6                __bad_interrupt
+                0x00000000000000a6                __vector_11
+                0x00000000000000a6                __vector_13
+                0x00000000000000a6                __vector_7
+                0x00000000000000a6                __vector_5
+                0x00000000000000a6                __vector_9
+                0x00000000000000a6                __vector_2
+                0x00000000000000a6                __vector_15
+                0x00000000000000a6                __vector_8
+                0x00000000000000a6                __vector_10
+                0x00000000000000a6                __vector_16
+                0x00000000000000a6                __vector_1
+ .text          0x00000000000000a8      0x2ea esc_test.o
+                0x00000000000000a8                __vector_14
+                0x0000000000000104                _Z11stop_timer1v
+                0x0000000000000108                __vector_6
+                0x0000000000000128                _Z17initialize_timer1v
+                0x0000000000000132                _Z12start_timer1j
+                0x0000000000000148                _Z14initialize_ADCv
+                0x0000000000000180                _Z11init_statesv
+                0x00000000000001fa                TWIUserError
+                0x00000000000001fc                TWIUserSignal
+                0x000000000000023a                _Z7capturev
+                0x0000000000000352                __vector_3
+                0x0000000000000372                __vector_4
+                0x0000000000000392                . = ALIGN (0x2)
+ *(.text.*)
+ .text.startup  0x0000000000000392       0x72 esc_test.o
+                0x0000000000000392                main
+ .text.setup    0x0000000000000404       0x22 embedded-atmel-twi/TWISlaveMem14.o
+                0x0000000000000404                setup
+ .text.__vector_17
+                0x0000000000000426      0x25c embedded-atmel-twi/TWISlaveMem14.o
+                0x0000000000000426                __vector_17
+                0x0000000000000682                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x0000000000000682        0x0 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_exit.o)
+                0x0000000000000682                exit
+                0x0000000000000682                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x0000000000000682        0x4 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_exit.o)
+ *(.fini0)
+                0x0000000000000686                _etext = .
+
+.data           0x0000000000800060        0x2 load address 0x0000000000000686
+                0x0000000000800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800060        0x1 esc_test.o
+                0x0000000000800060                prescalar
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0000000000800062                . = ALIGN (0x2)
+ *fill*         0x0000000000800061        0x1 00
+                0x0000000000800062                _edata = .
+                0x0000000000800062                PROVIDE (__data_end, .)
+
+.bss            0x0000000000800062      0x17b
+                0x0000000000800062                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0000000000800062      0x16a esc_test.o
+                0x0000000000800062                _do_capture
+                0x0000000000800063                _timer1
+                0x0000000000800064                _states_DDRD
+                0x0000000000800074                _states_PortB
+                0x0000000000800084                _states_PortD
+                0x0000000000800094                _samples_left
+                0x0000000000800095                _w
+                0x0000000000800097                twi_delay
+                0x0000000000800099                sample_count
+                0x000000000080009a                high_res
+                0x000000000080009b                which_adc
+                0x000000000080009c                waveform
+                0x000000000080019c                state_waits
+                0x00000000008001bc                states
+ *(.bss*)
+ .bss.i.1575    0x00000000008001cc        0x2 embedded-atmel-twi/TWISlaveMem14.o
+ .bss.mask.1577
+                0x00000000008001ce        0x1 embedded-atmel-twi/TWISlaveMem14.o
+ .bss.buff.1576
+                0x00000000008001cf        0x8 embedded-atmel-twi/TWISlaveMem14.o
+ *(COMMON)
+ COMMON         0x00000000008001d7        0x6 embedded-atmel-twi/TWISlaveMem14.o
+                0x00000000008001d7                read_len
+                0x00000000008001d9                twiStore
+                0x00000000008001db                write_len
+                0x00000000008001dd                PROVIDE (__bss_end, .)
+                0x0000000000000686                __data_load_start = LOADADDR (.data)
+                0x0000000000000688                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00000000008001dd        0x1
+                0x00000000008001dd                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+ .noinit        0x00000000008001dd        0x1 esc_test.o
+                0x00000000008001dd                mcucsr_mirror
+                0x00000000008001de                PROVIDE (__noinit_end, .)
+                0x00000000008001de                _end = .
+                0x00000000008001de                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x0000000000000000     0x1b60
+ *(.stab)
+ .stab          0x0000000000000000      0x6cc /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+ .stab          0x00000000000006cc      0xb7c esc_test.o
+                                        0xb88 (size before relaxing)
+ .stab          0x0000000000001248      0x720 embedded-atmel-twi/TWISlaveMem14.o
+                                        0x72c (size before relaxing)
+ .stab          0x0000000000001968       0x6c /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_exit.o)
+                                         0x78 (size before relaxing)
+ .stab          0x00000000000019d4       0xd8 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+                                         0xe4 (size before relaxing)
+ .stab          0x0000000000001aac       0xb4 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_clear_bss.o)
+                                         0xc0 (size before relaxing)
+
+.stabstr        0x0000000000000000     0x1499
+ *(.stabstr)
+ .stabstr       0x0000000000000000     0x1499 /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x11
+ *(.comment)
+ .comment       0x0000000000000000       0x11 esc_test.o
+                                         0x12 (size before relaxing)
+ .comment       0x0000000000000000       0x12 embedded-atmel-twi/TWISlaveMem14.o
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(esc_test.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+TWIUserError                                      esc_test.o
+                                                  embedded-atmel-twi/TWISlaveMem14.o
+TWIUserSignal                                     esc_test.o
+                                                  embedded-atmel-twi/TWISlaveMem14.o
+__bad_interrupt                                   /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__bss_end                                         /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_clear_bss.o)
+__bss_start                                       /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_clear_bss.o)
+__data_end                                        /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+__data_load_start                                 /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+__data_start                                      /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+__do_clear_bss                                    /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_clear_bss.o)
+                                                  embedded-atmel-twi/TWISlaveMem14.o
+                                                  esc_test.o
+__do_copy_data                                    /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_copy_data.o)
+                                                  esc_test.o
+__heap_end                                        /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__init                                            /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__stack                                           /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_1                                        /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_10                                       /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_11                                       /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_12                                       /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_13                                       /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_14                                       esc_test.o
+                                                  /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_15                                       /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_16                                       /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_17                                       embedded-atmel-twi/TWISlaveMem14.o
+                                                  /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_18                                       /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_2                                        /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_3                                        esc_test.o
+                                                  /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_4                                        esc_test.o
+                                                  /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_5                                        /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_6                                        esc_test.o
+                                                  /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_7                                        /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_8                                        /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_9                                        /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vector_default                                  /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+__vectors                                         /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+_do_capture                                       esc_test.o
+_exit                                             /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_exit.o)
+_samples_left                                     esc_test.o
+_states_DDRD                                      esc_test.o
+_states_PortB                                     esc_test.o
+_states_PortD                                     esc_test.o
+_timer1                                           esc_test.o
+_w                                                esc_test.o
+capture()                                         esc_test.o
+exit                                              /opt/local/lib/gcc/avr/4.7.0/avr4/libgcc.a(_exit.o)
+                                                  /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+get_mcucsr()                                      esc_test.o
+high_res                                          esc_test.o
+init_states()                                     esc_test.o
+initialize_ADC()                                  esc_test.o
+initialize_timer1()                               esc_test.o
+main                                              esc_test.o
+                                                  /opt/local/lib/gcc/avr/4.7.0/../../../../avr/lib/avr4/crtm8.o
+mcucsr_mirror                                     esc_test.o
+mm                                                embedded-atmel-twi/TWISlaveMem14.o
+prescalar                                         esc_test.o
+read_len                                          embedded-atmel-twi/TWISlaveMem14.o
+sample_count                                      esc_test.o
+setup                                             embedded-atmel-twi/TWISlaveMem14.o
+                                                  esc_test.o
+start_timer1(unsigned int)                        esc_test.o
+state_waits                                       esc_test.o
+states                                            esc_test.o
+stop_timer1()                                     esc_test.o
+twiStore                                          embedded-atmel-twi/TWISlaveMem14.o
+twi_delay                                         esc_test.o
+waveform                                          esc_test.o
+which_adc                                         esc_test.o
+write_len                                         embedded-atmel-twi/TWISlaveMem14.o

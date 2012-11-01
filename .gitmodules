@@ -1,0 +1,3 @@
+[submodule "embedded-atmel-twi"]
+	path = embedded-atmel-twi
+	url = git@github.com:ashima/embedded-atmel-twi.git
