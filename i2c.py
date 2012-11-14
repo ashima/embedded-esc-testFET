@@ -17,6 +17,8 @@ class CommunicationsError(Exception):
 
 
 def init_ser():
+    global mapped_variables
+
     mapfile_lines = open('esc_test.map', 'r').readlines()
     mapped_variables = dict([(m.group(2), int(m.group(1), 0) - 0x800000) for s in mapfile_lines for m in [
         re.search('(0x00000000008[0-9a-fA-F]+)\s*([a-zA-Z_]\w+)', s)] if m])
