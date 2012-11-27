@@ -108,8 +108,16 @@ bld dst, Cp
 #endif 
 */
 
-// note that these can't just be changed willy-nilly, due to 
-#define Sense_Common PD6
+/***********************************************************
+ * ESC-SPECIFIC CONFIG: YOU WILL LIKELY NEED TO ALTER THIS *
+ ***********************************************************/
+// Note that there is no way for code to know what port the following pins are
+// on, since Pxn is defined as simply a number 0-7. This is why the Select_*
+// macros are needed, below.
+#define Sense_Common PD6 // usually used as the analog comparator - (minus)
+                         // input, this can be used as an output so that
+                         // firing a single FET will cause a change in voltage
+                         // on that FET's 'phase' ADC line
 #define Cp PD5
 #define Bn PD3
 #define Bp PD2
@@ -117,11 +125,18 @@ bld dst, Cp
 #define Ap PD0
 #define Cn PB2
 
+// These macros map from the standard format of the uint8_t states[] variable,
+// LSB..MSB = [Ap, An, Bp, Bn, Cp, Cn, sense_common, unused],
+// to the physical ports on the ATmega.
 #define Select_PortD_Pins(u8) ((u8 & 0x4F) + ((u8 & 0x10) ? (1<<Cp) : 0))
 #define Select_PortB_Pins(u8) ((u8 & 0x20) ? (1<<Cn) : 0)
 #define Select_DDRD_Pins(u8) (u8 & 0x40)
+/***********************************************************
+ * END ESC-SPECIFIC CONFIG                                 *
+ ***********************************************************/
 
 const uint8_t sense_common_pin = 1<<Sense_Common;
+// these are used to mask out assignment to PORTs
 const uint8_t PortD_all = (1<<Cp) | (1<<Bn) | (1<<Bp) | (1<<An) | (1<<Ap) | sense_common_pin;
 const uint8_t PortB_all = (1<<Cn);
 
@@ -192,6 +207,7 @@ void start_timer1(uint16_t ocr1a) {
   OCR1A = ocr1a;
   TIFR = (1<<OCF1A);
   _timer1 = false;
+  // clk/8, CTC
   TCCR1B = (1<<CS11) | (1<<WGM12);
 }
 
@@ -207,7 +223,7 @@ void initialize_ADC() {
             (which_adc<<MUX0);
   } else {
     ADMUX = (1<<REFS0) |              // AVcc voltage reference
-            (1<<ADLAR)|              // MSB of value is MSB of ADCH
+            (1<<ADLAR) |              // MSB of value is MSB of ADCH
             (which_adc<<MUX0);
   }
   // 10-bit resolution "requires an input clock frequency between 50 kHz and 200 kHz";

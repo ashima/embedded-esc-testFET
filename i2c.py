@@ -4,6 +4,7 @@
 # (otherwise, we end up with multiple open serial connections and it gets ugly)
 
 import sys
+import os
 import re
 import serial
 import time
@@ -11,15 +12,20 @@ from math import ceil
 from functools import reduce
 from itertools import chain
 
+if len(sys.argv) < 2:
+    print("Please specify a serial port as the first argument.", file=sys.stderr)
+    exit()
+
+ser_port = sys.argv[1]
 
 class CommunicationsError(Exception):
     pass
 
-
 def init_ser():
     global mapped_variables
 
-    mapfile_lines = open('esc_test.map', 'r').readlines()
+    mapfile = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'esc_test.map')
+    mapfile_lines = open(mapfile, 'r').readlines()
     mapped_variables = dict([(m.group(2), int(m.group(1), 0) - 0x800000) for s in mapfile_lines for m in [
         re.search('(0x00000000008[0-9a-fA-F]+)\s*([a-zA-Z_]\w+)', s)] if m])
 
@@ -31,7 +37,7 @@ def init_ser():
     
     if not is_open:
         if not is_defined:
-            ser = serial.Serial('/dev/tty.usbmodem3a21', 115200, timeout=0.01)
+            ser = serial.Serial(ser_port, 115200, timeout=0.01)
         else:
             ser.open()
         
@@ -145,9 +151,9 @@ class config:
         m = mcu.MCUCSR
         
         if (mcucsr & (1<<m.WDRF)) != 0:
-            print("RESET CAUSE: watchdog timer reset")
+            print("RESET CAUSE: watchdog timer reset", file=sys.stderr)
         if (mcucsr & (1<<m.BORF)) != 0:
-            print("RESET CAUSE: brown out")
+            print("RESET CAUSE: brown out", file=sys.stderr)
 
 def flatten(a):
     return list(chain.from_iterable(a))
@@ -292,7 +298,7 @@ for i in range(0,2):
                     
         break
     except CommunicationsError as ex:
-        print("ex: %s" % ex)
+        print("ex: %s" % ex, file=sys.stderr)
         continue
 
 def gnuplot():
@@ -301,6 +307,8 @@ def gnuplot():
             ('vcoil', 'V_{{coil}}', ''), 
             ('vsup', 'V_{{battery}}', ''), 
             ('current', 'I_{{battery}}', ' axes x1y2')]])
+
+    # `singles` and `doubles` are defined in the non-function code above
     for fet, name in singles + doubles:
         print(format_string.format(name))
 
