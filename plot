@@ -8,9 +8,14 @@ set ylabel "(V)"
 set y2label "(A)"
 set xlabel "t (us)"
 
-set term x11 enhanced 0
-#set term png enhanced size 1600,1200
-#set output "single.png"
+png=1
+
+if (png) \
+	set term png enhanced size 1600,1200; \
+	set output "single.png"; \
+else \
+	set term x11 enhanced 0;
+
 set multiplot layout 3,2 title 'single FET firing'
 set title 'Ap'; plot 'Ap.vcoil' u 2:3 t 'V_{coil}' w lp, 'Ap.vsup' u 2:3 t 'V_{batt}' w lp, 'Ap.current' u 2:3 t 'I_{batt}' w lp axes x1y2
 set title 'An'; plot 'An.vcoil' u 2:3 t 'V_{coil}' w lp, 'An.vsup' u 2:3 t 'V_{batt}' w lp, 'An.current' u 2:3 t 'I_{batt}' w lp axes x1y2
@@ -20,8 +25,10 @@ set title 'Cp'; plot 'Cp.vcoil' u 2:3 t 'V_{coil}' w lp, 'Cp.vsup' u 2:3 t 'V_{b
 set title 'Cn'; plot 'Cn.vcoil' u 2:3 t 'V_{coil}' w lp, 'Cn.vsup' u 2:3 t 'V_{batt}' w lp, 'Cn.current' u 2:3 t 'I_{batt}' w lp axes x1y2
 unset multiplot
 
-set term x11 1
-#set output "double.png"
+if (png) \
+	set output "double.png"; \
+else \
+	set term x11 1;
 set multiplot layout 3,2 title 'double FET firing'
 set title 'Ap-Bn'; plot 'Ap-Bn.vcoil' u 2:3 t 'V_{coil}' w lp, 'Ap-Bn.vsup' u 2:3 t 'V_{battery}' w lp, 'Ap-Bn.current' u 2:3 t 'I_{battery}' w lp axes x1y2
 set title 'Ap-Cn'; plot 'Ap-Cn.vcoil' u 2:3 t 'V_{coil}' w lp, 'Ap-Cn.vsup' u 2:3 t 'V_{battery}' w lp, 'Ap-Cn.current' u 2:3 t 'I_{battery}' w lp axes x1y2
